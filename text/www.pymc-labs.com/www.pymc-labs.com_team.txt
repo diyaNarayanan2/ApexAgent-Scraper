@@ -1,0 +1,104 @@
+Home
+About
+Blog
+Workshops
+Resources
+LLM Price Is Right Benchmark
+Contact us
+About
+
+We are the creators of PyMC, the leading open-source software for statistical and Probabilistic AI modeling. Now, we've launched a consultancy to put our expertise to work for you.
+
+Our team of top Data Science and AI professionals has decades of experience developing impactful software solutions. We’ve successfully tackled complex challenges for hundreds of companies, demonstrating a proven track record at scale.
+
+Composed of PhDs, professors, mathematicians, AI specialists, and software engineers, our team stands out for its deep specialization in Probabilistic AI methods and Generative AI. At PyMC Labs, we craft custom models that integrate domain knowledge and precisely quantify uncertainty—delivering solutions tailored to your unique business challenges.
+
+Our Partners
+Dr. Thomas Wiecki
+
+Founder of PyMC Labs
+
+Biography:
+
+Author of PyMC, the leading platform for statistical data science
+
+PhD in Computational Cognitive Neuroscience from Brown University
+
+Former VP of Data Science and Head of Research at Quantopian Inc: Built a team of data scientists to build a hedge fund from a pool of 300k crowd researchers
+
+Recognized Public Speaker: Keynotes at the Open Data Science Conference (ODSC) & TACC as well as talks at Strata Hadoop & AI, Newsweek AI conference, and various PyData conferences around the world
+
+Dr. Christian Luhmann
+
+Chief Operating Officer
+
+Biography:
+
+PhD in Psychology from Vanderbilt University, BS in Computer Science from Northeastern University
+
+Former Professor at Stony Brook University
+
+More than 20 years of experience teaching and conducting research in data science, econometrics, statistics, and research methods
+
+Leads the PyMC Community Team, co-organizer of the PyMCon Web Series, and regularly hosts PyMC office hours and sprints for new project contributors
+
+Dr. Luca Fiaschi
+
+Partner Gen AI Vertical
+
+Biography:
+
+15+ years of experience leading AI, infrastructure and analytics teams in hypergrowth tech companies. Successfully scaled data teams from 0 to 100 professionals
+
+Former Chief Data & AI Officer at Mistplay, where he developed reinforcement learning models for personalization, recommendation engines, scalable data platforms, and advanced experimentation platforms enabling 200+ annual A/B tests and generating hundreds of millions of dollars in revenue
+
+Former VP Data Science and HelloFresh where he oversaw $800M Marketing budget optimization and spearheaded Probabilistic AI Causal Modeling for pricing analytics and experimentation. Previous to that, management roles at Alibaba, Stitch Fix and Rocket Internet SE
+
+PhD in Computer Science at Heidelberg University, with expertise in AI and computer vision
+
+Niall Oulton
+
+VP Marketing Analytics
+
+Biography:
+
+Masters in Econometrics, University of Bristol (2014 - 2015)
+
+10 years industry and agency experience, developing a strong domain expertise in marketing. Successfully managed and coordinated high-value global clients in complex market environments, handling billion-dollar marketing budgets. Including the in-housing of holistic marketing measurement platforms driving million-dollar marketing scenarios
+
+Core PyMC-Marketing Developer: UI, time-varying parameterization & budget optimization
+
+Joe Wilkinson
+
+VP Marketing Analytics
+
+Biography:
+
+BSc in Economics, University of Sheffield
+
+15 years marketing analytics experience. Former Senior Partner at Gain Theory, leading MMM consultancy, where he led the internal innovation team and the development of the internal data science platform
+
+Led and contributed to marketing effectiveness programs for major brands in the CPG, Retail, Entertainment, Government and D2C verticals
+
+Some Of Our Clients
+
+The Probabilistic AI
+Consultancy
+
+Home
+About
+Blog
+
+info@pymc-labs.com
+
+Subscribe to our newsletter
+
+Stay connected with the latest developments in Probabilistic AI Statistics and AI.
+
+Subscribe
+
+You can unsubscribe at any time. For more details, review ourPrivacy Policypage.
+
+Contact
+
+© 2025 PyMC Labs. All Rights Reserved.

@@ -1,0 +1,220 @@
+Home
+About
+Blog
+Workshops
+Resources
+LLM Price Is Right Benchmark
+Contact us
+From Weeks to Minutes: Accelerate building your Bayesian Marketing Mix Model using Fivetran & PyMC-Marketing
+September 01, 2025
+
+Fivetran and PyMC-Marketing integrate to deliver a production-grade Bayesian MMM pipeline. Standardized dbt outputs flow directly into PyMC-Marketing loaders, enabling faster insights, defendable uncertainty estimates, and scalable budget optimization.
+
+AI-based Customer Research: Faster & Cheaper Surveys with Synthetic Consumers
+
+Marketing Mix Modeling : A Complete guide
+
+This blog explains how Marketing Mix Modeling separates base and incremental sales, adds lag and saturation effects, and uses Bayesian methods to handle uncertainty. It also shows how these ideas are applied in practice, from early PyMC models at HelloFresh to more recent work with PyMC-Marketing at companies like Bolt.
+
+LLMs and Price Reasoning: Toward an Industry Benchmark
+
+Novel LLM benchmark for evaluating the ability to estimate consumer product prices and reason strategically in an analogue of "The Price is Right" showcase game.
+
+PyMC-Marketing vs. Meridian: A Quantitative Comparison of Open Source MMM Libraries
+
+This benchmark study directly compares PyMC-Marketing and Google’s Meridian on realistic synthetic datasets, from startup-scale to enterprise-level. Using aligned priors and identical configurations, it shows that PyMC-Marketing is consistently faster (2–20x), more accurate (lower error in channel contribution recovery, higher R², lower MAPE), and more scalable, thanks to its flexible sampling backends. Meridian remains leaner in storage size but suffers from slower performance, wider uncertainty, and convergence issues at scale. Overall, PyMC-Marketing emerges as the more robust, production-ready MMM library for data science teams.
+
+Announcing the Expert Access Program (EAP)
+
+Teams face critical deadlines where models must be rigorous, but hiring consultants or adding headcount only solves problems temporarily. This is why we created the Expert Access Program — to give teams ongoing access to our experts, ensuring their models keep delivering value long after the initial build.
+
+Can LLMs play The Price is Right?
+
+Synthetic consumers—LLMs simulating human survey participants—are becoming a powerful tool for marketing and behavioral research. They promise faster iteration, lower costs, and broader flexibility than traditional panels. But for them to be useful, they need not only to sound realistic, but also to demonstrate some level of real-world reasoning. A core question in this space: do LLMs “understand” prices?* That is, can they recognize how much everyday items cost, and make decisions based on that understanding?
+
+Introducing the BETA Release of Our MMM Agent - Powered by PyMC-Marketing
+
+We're thrilled to open up BETA access to the latest version of our Marketing Mix Modeling (MMM) Agent - a fully AI-driven assistant built on top of PyMC-Marketing that turns what used to be a multi-month modeling effort into an interactive, informative, and insightful workflow in hours.
+
+Write Me a PyMC Model
+
+ModelCraft is an AI agent that writes, checks, and refines PyMC models — turning natural language prompts into validated Bayesian code. Built during a PyMC Labs hackathon, it combines LLMs, LangGraph, and a secure compiler to eliminate hallucinated functions and broken models, making Bayesian modeling faster and easier for all.
+
+Application of Bayesian Computation in Finance
+
+This blog post explores the transformative potential of Bayesian computation and PyMC in the field of finance. It highlights how Bayesian methods can enhance financial analysis by quantifying uncertainty, overcoming restrictive assumptions of traditional econometric models, and managing complex model structures with non-normal distributions. The post emphasizes the advantages of Bayesian statistics, such as its ability to provide a comprehensive and interpretable framework for decision-making under risk, and showcases practical applications using PyMC.
+
+AI Innovation Lab: An agentic platform for transforming product development
+
+At PyMC Labs, we’re tackling a core problem in the CPG industry: product innovation is too slow, fragmented, and disconnected from real consumer needs.
+
+Can Synthetic Consumers Answer Open-Ended Questions?
+
+Evaluating LLMs on generating open-ended text responses.Synthetic consumers are revolutionizing market research by making it faster, less expensive, and more flexible.
+
+Probabilistic Time Series Analysis: Opportunities and Applications
+
+Profound impact of Bayesian modelling on businesses decisions.
+
+Synthetic Consumers: The Promise, The Reality, and The Future
+
+📢 Announcing Our First White Paper: "Synthetic Consumers: The Promise, The Reality, and The Future"
+
+How Realistic Are Synthetic Consumers?
+
+Evaluating LLMs on Political and Lifestyle Choices
+
+The AI MMM Agent, An AI-Powered Shortcut to Bayesian Marketing Mix Insights
+
+AI revolutionizes marketing analytics by dramatically accelerating the traditional marketing mix modeling (MMM) process. This AI agent automates PyMC-Marketing workflows, delivering MMM results in hours instead of months.
+
+Causal sales analytics: Are my sales incremental or cannibalistic?
+
+This post explores causal sales analytics, helping companies estimate whether sales from a new product are incremental or cannibalistic. The article discusses the complexities of such analysis and the need for bespoke causal models, ultimately enhancing decision-making for product portfolio management.
+
+Unobserved Confounders, ROAS and Lift Tests in Media Mix Models
+
+Understanding the role of lift tests in calibrating Media Mix Models.When working with Media Mix Models (MMMs), calibration with lift tests is not just a technical step —it's essential for making these models reliable and actionable.
+
+Bayesian Baseball Monkeys
+
+Using Bayesian methods to implement a MARCEL-style projection system for MLB ...
+
+Hierarchical Customer Lifetime Value Models
+
+This post explores the application of hierarchical Bayesian models to Customer Lifetime Value (CLV) prediction, improving accuracy for customer cohorts, and addressing seasonality and data sparsity.
+
+Customer Lifetime Value in the non-contractual continuous case: The Bayesian Pareto NBD Model
+
+Exploring the Bayesian Pareto NBD model for predicting customer lifetime value and purchase behavior
+
+Cohort Revenue & Retention Analysis
+
+Explore how Bayesian methods can be applied to cohort-level customer lifetime value (CLV) models. This post focuses on combining retention and revenue components for improved forecasting and strategic insights in marketing.
+
+Mastering Marketing Effectiveness: A Comprehensive Guide for Digital Marketers
+
+In today's fast-paced digital marketing landscape, it's crucial to master measuring and understanding marketing strategies' effectiveness. This guide covers the importance of marketing effectiveness, explores various evaluation methods, and presents best practices for implementing an effective marketing measurement strategy.
+
+Latent Calendar: Modeling Weekly Behavior with Latent Components
+
+We will delve into how Latent Dirichlet Allocation can be applied to discretized calendar events, allowing us to tap into the model's probabilistic origins and its connection to Bayesian principles, offering a wide array of potential applications and insights.
+
+Developing Hierarchical Models for Sports Analytics
+
+Grasp the intricacies of hierarchical models in the realm of sports analytics. This article presents a comprehensive analysis of these advanced techniques, highlighting their potential in transforming data-driven sports strategies.
+
+From Uncertainty to Insight: How Bayesian Data Science Can Transform Your Business
+
+Causal analysis with PyMC: Answering 'What If?' with the new do operator
+
+Learn how to use Bayesian causal analysis with PyMC and the new do operator to answer 'What If?' questions.
+
+Building an in-house marketing analytics solution
+
+Get a fresh perspective on constructing an in-house marketing analytics solution. This article offers unique insights into the process, highlighting the benefits and challenges of such an endeavor.
+
+Bayesian Methods in Modern Marketing Analytics
+
+Discover the innovative application of Bayesian methods in the realm of modern marketing analytics. This article offers a fresh perspective on how these advanced techniques are reshaping the landscape of data-driven marketing strategies.
+
+Out of model predictions with PyMC
+
+Simulating data with PyMC
+
+Explore how PyMC can be used for efficient and powerful data simulation.
+
+PyMC-Marketing: A Bayesian Approach to Marketing Data Science
+
+PyMC Labs is excited to announce the initial release of PyMC-Marketing
+
+Likelihood Approximations with Neural Networks in PyMC
+
+We use an example from cognitive modeling to show how differentiable likelihoods learned from simulators can be used with PyMC.
+
+Likelihood Approximations for Cognitive Modeling with PyMC
+
+Dive into cognitive modeling with PyMC. Learn about the impact of likelihood approximations.
+
+How to use JAX ODEs and Neural Networks in PyMC
+
+Learn how to seamlessly integrate JAX-based ODE solvers and neural networks with PyMC for Bayesian modeling.
+
+Hierarchical Bayesian Modeling of Survey Data with Post-stratification
+
+Dive into the complexities of Hierarchical Bayesian Modeling applied to survey data with post-stratification. Understand the subtleties of multilevel regression and the potential of Gaussian Processes in this comprehensive analysis.
+
+CausalPy - causal inference for quasi-experiments
+
+Unveil the power of CausalPy, a new open-source Python package that brings Bayesian causal inference to quasi-experiments. Discover how it navigates the challenges of non-randomized treatment allocation, offering a fresh perspective on causal claims in the absence of experimental randomization.
+
+Bayesian Marketing Mix Models: State of the Art and their Future
+
+Learn the cutting-edge of Bayesian Marketing Mix Models and glimpse into their promising future. Uncover how these models are revolutionizing business strategies and decision-making processes.
+
+Solving Real-World Business Problems with Bayesian Modeling
+
+A practical guide to solving business problems with Bayesian modeling
+
+Bayesian Item Response Modeling in PyMC
+
+Uncover the power of Bayesian Item Response Theory in PyMC. Learn how it revolutionizes data analysis and opens up new possibilities for personality modeling.
+
+Modeling spatial data with Gaussian processes in PyMC
+
+We build a Gaussian process model on a geospatial dataset with the goal of predicting expected concentrations of a radioactive gas in households depending on the county the houses belong to.
+
+Bayesian inference at scale: Running A/B tests with millions of observations
+
+Industry data scientists are increasingly making the shift over to using Bayesian methods. However, one often cited reason for avoiding this is because “Bayesian methods are slow.”
+
+Bayesian Modeling in Biotech: Using PyMC to Analyze Agricultural Data
+
+Uncover the power of Bayesian modeling in biotechnology. Learn how PyMC is used to analyze complex agricultural data, providing valuable insights for the industry.
+
+Bayesian Media Mix Models: Modelling changes in marketing effectiveness over time
+
+we outlined what Bayesian Media Mix Models (MMM's) are, how they worked, and what insights they can provide.
+
+NBA Foul Analysis with Item Response Theory using PyMC
+
+Delve into the use of Bayesian Item Response Theory and the Rasch model for analyzing NBA foul calls data. The model estimates individual player contributions to foul outcomes.
+
+What if? Causal inference through counterfactual reasoning in PyMC
+
+Unravel the mysteries of counterfactual reasoning in PyMC and Bayesian inference. This post illuminates how to predict the number of deaths before the onset of COVID-19 and how to forecast the number of deaths if COVID-19 never happened. A must-read for those interested in causal inference!
+
+PyMC, Aesara and AePPL: The New Kids on The Block
+
+Dive into the world of PyMC, Aesara, and AePPL, the new powerhouses in probabilistic programming. Discover how they revolutionize Bayesian modeling and open up new possibilities for data analysis.
+
+Bayesian Vector Autoregression in PyMC
+
+It's time to let go of your custom Gibbs sampler
+
+1
+2
+Stay connected with latest developments in Probabilistic AI Statistics
+and AI. You can unsubscribe at any time.
+Subscribe
+
+The Probabilistic AI
+Consultancy
+
+Home
+About
+Blog
+
+info@pymc-labs.com
+
+Subscribe to our newsletter
+
+Stay connected with the latest developments in Probabilistic AI Statistics and AI.
+
+Subscribe
+
+You can unsubscribe at any time. For more details, review ourPrivacy Policypage.
+
+Contact
+
+© 2025 PyMC Labs. All Rights Reserved.

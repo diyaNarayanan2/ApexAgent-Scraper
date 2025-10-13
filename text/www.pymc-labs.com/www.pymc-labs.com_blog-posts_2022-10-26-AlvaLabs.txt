@@ -1,0 +1,98 @@
+Home
+About
+Blog
+Workshops
+Resources
+LLM Price Is Right Benchmark
+Contact us
+Table of Contents
+Introduction
+Timestamps
+Bayesian Item Response Modeling in PyMC
+
+October 26, 2022
+
+By Thomas Wiecki
+
+Introduction#
+
+In this panel discussion, we discuss IRT (Item Response Theory), GRM (Graded Response Model) and the advantages to using the Bayesian approach at Alva Labs.
+
+Item response theory, also known as the latent response theory, refers to a family of mathematical models that attempt to explain the relationship between latent traits (unobservable characteristic or attribute) and their manifestations (i.e. observed outcomes, responses or performance). Graded response model (or Ordered Categorical Responses Model) is a family of mathematical models for grading responses.
+
+Timestamps#
+
+00:00 Introduction to PyMC Labs
+
+02:48 Panelists introduction
+
+06:05 Outline of the talk by Morgan
+
+06:51 Alva Labs
+
+08:33 Alva Labs personality test
+
+12:14 Item Response Theory and its advantages
+
+16:12 Question: Won't people fake answers to the personality questionnaire if they know what the company is looking for?
+
+18:09 Question: What algorithm is used for combining data points?
+
+19:36 Graded Response Model
+
+20:50 Bayesian Inference
+
+23:19 ALva Labs workflow
+
+25:08 Is the person trait supposed to be a measure of performance and how is it quantified for training?On which data is the model trained?
+
+27:37 Emerging challenges over the years
+
+30:45 How PyMC helped Alva Labs improve their personality model
+
+32:33 Understanding the problem at Alva Labs
+
+34:34 Bayesian workflow
+
+35:32 Simulate the data generating process
+
+38:12 Develop the model
+
+40:25 Evaluate alternative parameterizations
+
+43:40 Test different inference engines
+
+46:05 Use the mode4 with real data
+
+47:52 The final deliverable
+
+49:48 Results of the new model compared to the original Alva Labs model
+
+51:12 Question: Could you comment on how much faster the sampler becomes and why do you care about memory?
+
+53:40 Question: How is the trained model validated and how do you know the person trait is useful and how is the usefulness measured?
+
+55:02 How do you often rerun the model to update the parameters
+
+56:02 Thank you!
+
+The Probabilistic AI
+Consultancy
+
+Home
+About
+Blog
+
+info@pymc-labs.com
+
+Subscribe to our newsletter
+
+Stay connected with the latest developments in Probabilistic AI Statistics and AI.
+
+Subscribe
+
+You can unsubscribe at any time. For more details, review ourPrivacy Policypage.
+
+Contact
+
+© 2025 PyMC Labs. All Rights Reserved.

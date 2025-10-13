@@ -1,0 +1,41 @@
+Home
+About
+Blog
+Workshops
+Resources
+LLM Price Is Right Benchmark
+Contact us
+Back
+Model Performance Comparison
+Elo Rating
+MAPE
+Overbid Rate
+
+Chess-inspired rating system where models gain points for wins and lose points for losses. Higher ratings indicate better overall performance.
+
+Latest Update: September 25, 2025
+
+MAPE vs Overbid Rate
+
+Each point represents a model performance. Lower values on both axes indicate better performance.
+
+The Probabilistic AI
+Consultancy
+
+Home
+About
+Blog
+
+info@pymc-labs.com
+
+Subscribe to our newsletter
+
+Stay connected with the latest developments in Probabilistic AI Statistics and AI.
+
+Subscribe
+
+You can unsubscribe at any time. For more details, review ourPrivacy Policypage.
+
+Contact
+
+© 2025 PyMC Labs. All Rights Reserved.

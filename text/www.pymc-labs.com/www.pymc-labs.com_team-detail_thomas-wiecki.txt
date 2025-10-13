@@ -1,0 +1,43 @@
+Home
+About
+Blog
+Workshops
+Resources
+LLM Price Is Right Benchmark
+Contact us
+Dr. Thomas Wiecki
+Founder of PyMC Labs
+Biography:
+
+Author of PyMC, the leading platform for statistical data science
+
+PhD in Computational Cognitive Neuroscience from Brown University
+
+Former VP of Data Science and Head of Research at Quantopian Inc: Built a team of data scientists to build a hedge fund from a pool of 300k crowd researchers
+
+Recognized Public Speaker: Keynotes at the Open Data Science Conference (ODSC) & TACC as well as talks at Strata Hadoop & AI, Newsweek AI conference, and various PyData conferences around the world
+
+Specializations:
+Probabilistic AI statistics
+teaching
+
+The Probabilistic AI
+Consultancy
+
+Home
+About
+Blog
+
+info@pymc-labs.com
+
+Subscribe to our newsletter
+
+Stay connected with the latest developments in Probabilistic AI Statistics and AI.
+
+Subscribe
+
+You can unsubscribe at any time. For more details, review ourPrivacy Policypage.
+
+Contact
+
+© 2025 PyMC Labs. All Rights Reserved.

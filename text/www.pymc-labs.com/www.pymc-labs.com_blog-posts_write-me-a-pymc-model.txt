@@ -1,0 +1,125 @@
+Home
+About
+Blog
+Workshops
+Resources
+LLM Price Is Right Benchmark
+Contact us
+Table of Contents
+Hacking an agent to generate hallucination-free Bayesian models
+How it works
+How it’s going
+Future Direction
+Working with PyMC
+Write Me a PyMC Model
+
+July 01, 2025
+
+By Bernard (Ben) Mares, Allen Downey, Alexander Fengler
+
+Hacking an agent to generate hallucination-free Bayesian models#
+
+Writing a PyMC model is not easy. It requires familiarity with both statistical distributions and Python libraries. And if at first you don’t succeed, debugging can be a challenge.
+
+Large language models like GPT-4 are surprisingly capable at generating probabilistic models. You can give them a few sentences describing a Bayesian problem, and they will often respond with runnable PyMC code. But, as anyone who’s tried this knows, the quality of the results varies – and demonstrates a variety of failure modes.
+
+Sometimes the code is out of date — using pymc3 imports or old syntax. Sometimes it violates best practices, and occasionally the model won’t even compile, thanks to hallucinated functions or subtle shape mismatches.
+
+We wanted to fix that.
+
+So, during our internal Probabilistic AI hackathon, we built ModelCraft — an LLM-powered modelling agent that doesn't just generate PyMC code, but also checks its own work. Before it returns anything to the user, it runs the model through a remote compiler, catches errors, and rewrites the model if necessary. The goal: make it easier for beginners and experts alike to go from modelling ideas to validated PyMC code — all through natural language.
+
+How it works#
+
+ModelCraft acts as a simple conversational agent that helps users write and validate PyMC models through natural language. You describe the model you want — the context, priors, data, whatever — and the agent responds with a complete PyMC model that’s been checked for correctness, at least in the sense that it compiles.
+
+Behind the scenes ModelCraft uses an LLM and LangGraph to generate candidate models and evaluate them using a secure code sandbox. This isn’t just code generation — the agent actually compiles each model before returning it, so you’re never stuck debugging a hallucinated pm.MagicUnicorn.
+
+We also built a custom tool called compile_pymc_model that runs inside a remote E2B sandbox. This tool takes PyMC code, attempts to compile it (without sampling), and returns either a success message or a detailed error traceback. That output is routed back to the agent, which uses it to decide whether to revise the model or move on.
+
+The agent is exposed through a FastAPI server with an OpenAPI interface, and we connected it to a frontend built with Onyx. The result is a fluid workflow where users can type modeling problems in plain language, and get structured, idiomatic PyMC models in return — already validated, and ready for sampling or refinement.
+
+How it’s going#
+
+In our demo, ModelCraft successfully tackled several medium-complexity modeling tasks — including problems drawn from Think Bayes. The agent was able to generate valid, modern PyMC models with good structure and style, and thanks to its built-in validation step, it avoided many of the common pitfalls we see when using LLMs for code generation.
+
+In some cases, it took the agent multiple iterations to arrive at a model that compiled cleanly. This added some latency, but it also highlighted the value of the retry-and-validate loop — instead of handing off a broken model to the user, the agent caught its own mistakes and improved on them.
+
+We found, as others have noted in the literature before, that subtle changes in the system prompt can make a big difference in the quality of the model produced . For example, the “lions and tigers and bears” problem from Think Bayes can be elegantly modeled with a Dirichlet distribution. However, when the system prompt included an instruction to use Python type annotations, most of the models produced involved a convoluted solution involving categorical distributions because the extra steps involved allowed for the use of type annotations. Model quality improved substantially after we removed this instruction.
+
+
+# Hypergeometric likelihood
+k = pm.HyperGeometric("k", N=N, M=n1, n=n2, observed=k_observed)
+
+
+This line generates an error because the keyword arguments of HyperGeometric are not correct.
+
+TypeError: HyperGeometric.dist() missing 1 required positional argument: 'k'
+
+
+With this information, ModelCraft generates a second iteration that compiles and samples:
+
+
+import pymc as pm  
+
+import arviz as az
+
+# Observed data  
+n1 = 25  # bears tagged in first capture  
+n2 = 20  # bears captured in second capture  
+k_observed = 4  # recaptured bears that were tagged
+
+# Reasonable upper bound for the total population  
+N_max = 500
+
+with pm.Model() as grizzly_model:  
+
+   # Prior over total population size N (must be >= n1 and n2)  
+   N = pm.DiscreteUniform("N", lower=max(n1, n2), upper=N_max)
+
+   # Likelihood using hypergeometric distribution  
+   # args: k (obs), N, M (tagged), n (second capture size)  
+   
+   k = pm.HyperGeometric("k", N, n1, n2, observed=k_observed)
+
+   # Sample from the posterior  
+   trace = pm.sample(3000, tune=1000, return_inferencedata=True)
+
+# Summarize posterior of N  
+az.summary(trace, var_names=["N"])
+
+
+This is not the only solution to the problem. In particular, we might want to iterate on the form of the prior distribution. But it helps to start with a correct model!
+
+Future Direction#
+
+Model Craft was developed during an internal hackathon to help our team deliver client solutions more efficiently when coding complex Bayesian models. For a one-day project, we think it’s a compelling proof of concept: an AI modeling assistant that’s not just smart, but careful. The experience underscored the immense power we can unlock with today’s LLM orchestration tools—even with relatively minimal effort.
+
+Given more time, we plan to extend Model Craft to support full model diagnostics, posterior visualization, and user-driven refinement loops. Another promising direction is wrapping this agent in an MCP server to communicate with Claude, Cursor, and other MCP clients. This will allow PyMC developers to use AI-powered assistant IDEs more effectively, all within their preferred coding environment.
+
+We’ll soon be releasing a full MCP server for PyMC—so stay tuned!
+
+Working with PyMC#
+
+If you are interested in seeing what we at PyMC Labs can do for you, then please email info@pymc-labs.com. We work with companies at a variety of scales and with varying levels of existing modeling capacity. We also run corporate workshop training events and can provide sessions ranging from introduction to Bayes to more advanced topics.
+
+The Probabilistic AI
+Consultancy
+
+Home
+About
+Blog
+
+info@pymc-labs.com
+
+Subscribe to our newsletter
+
+Stay connected with the latest developments in Probabilistic AI Statistics and AI.
+
+Subscribe
+
+You can unsubscribe at any time. For more details, review ourPrivacy Policypage.
+
+Contact
+
+© 2025 PyMC Labs. All Rights Reserved.

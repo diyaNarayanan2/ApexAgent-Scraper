@@ -1,0 +1,124 @@
+Home
+About
+Blog
+Workshops
+Resources
+LLM Price Is Right Benchmark
+Contact us
+Table of Contents
+Introduction
+Timestamps
+Resources
+Likelihood Approximations for Cognitive Modeling with PyMC
+
+January 12, 2023
+
+By Thomas Wiecki
+
+Introduction#
+
+Digital therapeutics are evidence-based, clinically evaluated software and devices that can be used to treat an array of diseases and disorders, according to the Digital Therapeutics Alliance, the industry's trade association. They can be used independently or with medications, devices, and other therapies to treat physical and behavioral health conditions, including pain, diabetes, anxiety, post-traumatic stress disorder, and asthma.
+
+In this talk, PyMC Labs and Akili discuss using Bayesian methods and PyMC to test a range of computational models of cognition, specifically with an eye towards ADHD (Attention-deficit/hyperactivity disorder). They focus on some technical challenges and how ideas from likelihood-free inference and machine learning can help overcome them.
+
+Timestamps#
+
+00:00 Thomas Wiecki introduction
+
+01:27 Alex introduction
+
+01:51 Titi introduction
+
+02:55 Andy introduction
+
+03:42 Akili background
+
+05:11 EndeavorRx by Akili and PyMC's involvement
+
+09:49 Likelihood approximation networks in PyMC
+
+10:15 NeuroRacer
+
+15:44 Two important aspects of the Model
+
+20:39 Inference with model variants
+
+21:05 Inference from access to simulators
+
+21:55 Inference with models
+
+22:56 Training
+
+24:06 Previous toolbox: HDDM
+
+24:59 Properties inherited from Neural Networks
+
+26:31 Graphical representation of model in PyMC
+
+29:42 Code in PyMC
+
+30:07 Neural network (LAN, CPN)
+
+31:17 Proof of concept (Parameter Recovery)
+
+31:42 Proof of concept (Speed)
+
+32:41 Thomas question on speed
+
+36:11 Thomas on Before PyMC vs after PyMC
+
+36:32 Titi on before PyMC vs after PyMC
+
+38:11 Andy on production use case
+
+39:00 Thomas question on application
+
+39:16 Andy explains the use case and the application
+
+40:28 Titi on impact in applications
+
+41:15 Thomas on Knowledge transfer to Akili research team and collaboration
+
+43:02 Andy on working with PyMC team
+
+44:55 Thomas question to Alex on applying this method to other applications across industries
+
+47:15 Why does Akili care about these kinds of models ?
+
+49:31 PyMC's work and impact towards Akili's mission
+
+51:04 Audience Q/A (What other conditions can this be applied other than ADHD?)
+
+52:03 Audience Q/A (Is Data enough to conduct experiments ?)
+
+56:32 Closed form solution vs Neural Networks
+
+56:52 Optimizing LAN for faster forward pass, primary metric and designing networks
+
+Resources#
+Akili Interactive
+What are digital therapeutics and their use cases?
+Understanding DTx - Digital Therapeutics Alliance
+Likelihood approximation networks (LANs) for fast inference of simulation models in cognitive neuroscience
+Overview of Approximate Bayesian Computation
+
+The Probabilistic AI
+Consultancy
+
+Home
+About
+Blog
+
+info@pymc-labs.com
+
+Subscribe to our newsletter
+
+Stay connected with the latest developments in Probabilistic AI Statistics and AI.
+
+Subscribe
+
+You can unsubscribe at any time. For more details, review ourPrivacy Policypage.
+
+Contact
+
+© 2025 PyMC Labs. All Rights Reserved.

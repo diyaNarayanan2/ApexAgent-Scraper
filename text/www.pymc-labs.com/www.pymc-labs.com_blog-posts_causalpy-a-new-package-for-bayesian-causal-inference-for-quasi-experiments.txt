@@ -1,0 +1,89 @@
+Home
+About
+Blog
+Workshops
+Resources
+LLM Price Is Right Benchmark
+Contact us
+Table of Contents
+What is CausalPy?
+Features
+An example
+Call to action
+Find out more
+CausalPy - causal inference for quasi-experiments
+
+November 17, 2022
+
+By Benjamin Vincent
+
+PyMC Labs is happy to announce the new open source python package, CausalPy! This is a PyMC Labs supported project, driven by Benjamin Vincent.
+
+What is CausalPy?#
+
+Causal claims are best made when we analyse data from experiments (ideally randomized control trials). The randomization process allows you to claim that differences in a measured outcome are likely due to an experimentally allocated treatment, as opposed to some other confounding factor or difference between the test and control groups.
+
+But experiments and randomisation of treatment can be expensive and sometimes impossible. Let's consider just two examples:
+
+It is not possible to randomise exposure of individuals to linear TV advertising campaigns, but we still want to know the causal impact of the advertising campaign.
+It is not possible to randomly expose households to proximity to fracking operations but we still want to know what the causal consequences upon health may be.
+
+Quasi-experimental methods have been developed so that (when certain assumptions are satisfied) we can still make causal claims in the absence of experimental randomisation across treatment units (e.g. people, households, countries, etc.).
+
+CausalPy aims to have a broad applicability to making causal claims across a range of quasi-experimental settings.
+
+Features#
+
+While CausalPy is still a beta release, it already has some great features. The focus of the package is to combine Bayesian inference with causal reasoning with PyMC models. However it also allows the use of traditional ordinary least squares methods via scikit-learn models.
+
+At the moment we focus on the following quasi-experimental methods, but we may expand this in the future:
+
+Synthetic control: This is appropriate when you have multiple units, one of which is treated. You build a synthetic control as a weighted combination of the untreated units.
+Interrupted time series: This is appropriate when you have a single treated unit, and therefore a single time series, and do not have a set of untreated units.
+Difference in differences: This is appropriate when you have a single pre and post intervention measurement and have a treament and a control group.
+Regression discontinuity: Regression discontinuity designs are used when treatment is applied to units according to a cutoff on a running variable, which is typically not time. By looking for the presence of a discontinuity at the precise point of the treatment cutoff then we can make causal claims about the potential impact of the treatment.
+An example#
+
+By way of example, we can run a regression discontinuity analysis to examine the effects of reaching legal drinking age (in the USA) upon all cause mortality. With mortality rate data from (Carpenter & Dobkin, 2009) loaded into df, we can run the analysis like this:
+
+Note that the exact API may change in future.
+
+And by calling result.plot() we get a pretty nice output.
+
+The results show a clear discontinuity in all cause mortality rate at age 21.
+
+In this observational dataset, there was no random allocation to drinking or no drinking conditions. But the logic is that if we find a discontinuity (which we did) then on balance of probability, it is likely that the legal drinking age is causally responsible, as opposed to some other confounding variable.
+
+Call to action#
+
+We want to share the package with you all at this very early point - CausalPy could be considered as being in beta stage. So we are interested in your thoughts on the repository, suggestions for features, or bug reports. Once we are at a more stable point in CausalPy's development then we will open it up for code contributions, but we are not yet at that point.
+
+Find out more#
+
+Stay tuned for more information here on the PyMC Labs blog, or follow @pymc_labs or the lead developer (Benjamin Vincent; @inferencelab) on Twitter for further updates.
+
+And check out the package here:
+
+GitHub repository: pymc-labs/CausalPy Star the GitHub repo
+Documentation: causalpy.readthedocs.io
+
+The Probabilistic AI
+Consultancy
+
+Home
+About
+Blog
+
+info@pymc-labs.com
+
+Subscribe to our newsletter
+
+Stay connected with the latest developments in Probabilistic AI Statistics and AI.
+
+Subscribe
+
+You can unsubscribe at any time. For more details, review ourPrivacy Policypage.
+
+Contact
+
+© 2025 PyMC Labs. All Rights Reserved.

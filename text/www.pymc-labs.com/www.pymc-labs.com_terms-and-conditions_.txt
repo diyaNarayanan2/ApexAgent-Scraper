@@ -1,0 +1,138 @@
+Home
+About
+Blog
+Workshops
+Resources
+LLM Price Is Right Benchmark
+Contact us
+
+Terms & Conditions
+
+These terms and conditions apply to the online workshop organized by PyMC Labs and govern your registration and participation.
+
+Introduction
+
+These terms and conditions (hereinafter referred to as the Terms) apply to the online workshop, which contains sessions (hereinafter referred to as the Workshop) organized by PyMC Labs (hereinafter referred to as the Company) and must be adhered to by the person registering and participating in the Workshop (hereinafter referred to as the Participant).
+
+By registering for and participating in the Workshop, the Participant agrees to comply with and be bound by these Terms. By agreeing to the Terms set out below, the parties are deemed to have entered into an agreement on the following Terms.
+
+Registration and Payment
+
+To register for the Workshop, the Participant must complete the online registration form and provide accurate information.
+
+Registration is on a first-come, first-served basis.
+
+Full payment of the participation fee (hereinafter referred to as the Fee) is required at the time of registration. Applicable value-added tax (VAT) and any other taxes or charges will be added to the Fee in accordance with the laws and regulations in force at the time of registration.
+
+The Company may use third-party payment providers to collect payment. The processing is subject to the provider's terms, conditions, and privacy policies, and the Company is not liable for their security or performance.
+
+Upon receipt of the Participant's registration and payment of the Fee, the Participant will receive a confirmation email with details about the Workshop.
+
+When enrolling for a Workshop, the Participant represents and warrants that the Participant has the legal capacity and is of sufficient age to enter into a binding contract with the Company.
+
+Workshop
+
+Once the Company has received payment of the Fee, the Participant will be granted access to the Workshop.
+
+The Workshop is conducted live online via Google Meet (or a similar solution) and the Participant is required to attend at the scheduled time. Recordings of the Workshop will be available for later viewing if provided by the Company.
+
+The Participant is responsible for ensuring the Participant has the necessary technology and internet access to participate.
+
+Participants are expected to conduct themselves professionally and respectfully during all Workshop activities. Disruptive behaviour may result in removal from the Workshop without a refund of the Fee.
+
+Intellectual Property
+
+The Participant acknowledges and agrees that all intellectual property related to the Workshop, including but not limited to course materials (e.g., slides, examples, documentation) (hereinafter jointly as the Materials), as well as all associated copyrights, trademarks, trade secrets, patents, and other intellectual property rights (hereinafter jointly as the IP), are the sole and exclusive property of the Company or its licensors. The Participant does not acquire any ownership rights in the IP under these Terms.
+
+The Participant agrees not to use the IP for any unlawful, infringing, or unauthorized purpose. Reproduction, adaptation, distribution, public display, transmission, resale, or commercial exploitation of the IP, whether electronically, physically, or otherwise, is strictly prohibited without the prior express written consent of the Company. This includes, but is not limited to, the registration of new trademarks, trade names, service marks, or domain names derived from the IP.
+
+Usage of the Workshop Materials
+
+Subject to the Participant's full compliance with these Terms, the Company grants the Participant a limited, non-exclusive, non-transferable, and revocable license to access and use the Workshop and associated Materials strictly for personal, non-commercial use and solely in connection with participation in the Workshop.
+
+This license will automatically terminate upon (i) the Participant's completion of the Workshop, (ii) cessation of use of the Workshop, or (iii) termination of the agreement concluded between the parties. The Company reserves the right to revoke the license at any time if it suspects misuse of the Workshop or Materials, including but not limited to sharing login credentials, distributing content, or other breaches of these Terms.
+
+The Workshop and any accompanying Materials are provided for use by the registered Participant only. Sharing access to the Workshop, Materials, or login credentials with any third party is strictly prohibited. If the Company reasonably suspects that such sharing has occurred, it reserves the right to immediately terminate the Participant's access to the Workshop and may, at its sole discretion, charge additional fees for unauthorized registrations or access.
+
+Participation in the Workshop does not create any partnership, employment, agency, or other form of association with the Company or its affiliated brands. The Participant agrees not to make any public statements, representations, or implications suggesting such an association or endorsement by the Company following their participation in the Workshop.
+
+Publishing information online
+
+The Participant is permitted to share general insights gained from the Workshop on online platforms or social media, provided that such content remains non-specific and does not disclose any proprietary material or detailed content from the Workshop.
+
+The Participant is required to include appropriate attribution to the Company, such as a mention or hashtag, in any such publication. The Company reserves the right to request the removal of any such posts or any associated attributions at its discretion.
+
+Personal Data
+
+The Company will process the Participant's personal data based on legal grounds and in accordance with the Company's Privacy Policy, which can be found here: Privacy Policy.
+
+Additionally, by signing up for the Workshop, the Participant agrees that the Company may contact the Participant via email about similar events or services that the Company believes may be of interest. If the Participant no longer wishes to receive such communications, the Participant can unsubscribe at any time using the link provided in our emails or by notifying the Company directly.
+
+Cancellation and Refunds
+
+The Participant may cancel registration at any time before the start of the Workshop. In order to cancel, the Participant must contact the Company using the contact details provided in section 11.
+
+If the Participant is unable to attend the Workshop for which the Participant registered, the Participant's seat can be transferred to another person. The Participant must notify the Company as soon as possible to arrange the transfer.
+
+If the Participant cancels the subscription, a refund of the Fee will only be provided if the cancellation is made at least 7 days prior to the start of the Workshop.
+
+Additionally, the Participant, as a natural person, has the right to withdraw from the subscription within 14 days of registration and receive a full refund, provided that the Workshop has not yet been delivered.
+
+In case the Company needs to cancel or reschedule a Workshop, the Participant will be notified as soon as possible and will have the option to transfer the Participant's registration to the next available Workshop or receive a full refund.
+
+If the Workshop has already been delivered, no refund shall be granted under any circumstances.
+
+Liability
+
+The Participant acknowledges that participation in the Workshop is voluntary and agrees to assume any risk associated with participation.
+
+The Company is not responsible for any technical issues that the Participant may experience, including but not limited to issues with internet access, hardware, or software.
+
+The Company does not offer any promises or guarantees with regard to its Workshop or Materials used in the Workshop. The Workshop and the Materials are provided for informational purposes only.
+
+The Company is not liable for any result or non-result or any consequences which may come about due to the Participant's participation in the Workshop.
+
+The Company is not liable for any damages that may occur as a result of participation, to the fullest extent permitted by law. This applies to any and all claims, including lost profits or revenues, consequential or punitive damages, negligence, strict liability, fraud, or torts of any kind.
+
+Governing Law and Jurisdiction
+
+These Terms shall be governed by and construed in accordance with the laws of Estonia.
+
+Any disputes arising out of or in connection with these Terms shall be subject to the exclusive jurisdiction of the courts in Estonia.
+
+Miscellaneous
+
+Modification. The Company reserves the right to modify or amend these Terms at any time without prior notice to the Participant. Any such modifications shall take effect immediately upon being posted on the Company’s Website and shall supersede all previous versions, unless otherwise explicitly stated. The Participant agrees to review these Terms periodically and acknowledges that continued participation in the Workshop constitutes acceptance of any changes.
+
+Assignment. The Participant may not assign, transfer, novate, lease, or otherwise dispose of any rights or obligations under these Terms without the prior written consent of the Company. The Company may assign or transfer the agreement, in whole or in part, including any rights or obligations hereunder, without the Participant’s consent, upon providing notice to the Participant.
+
+Severability. If any provision or part thereof of these Terms is found to be invalid, illegal, or unenforceable by a court or other competent authority, the remaining provisions shall remain in full force and effect. Any invalid or unenforceable provision shall be severed to the minimum extent necessary, and the remainder of these Terms shall be interpreted so as to best give effect to the original intent of the parties.
+
+No Waiver. Failure by the Company to enforce any provision of these Terms shall not constitute a waiver of that provision or of any other provision in the future. A waiver shall only be effective if it is in writing and signed by the party granting it. No reliance may be placed on any verbal or implied waiver unless formally documented.
+
+No Agency, Partnership or Joint Venture. No agency, partnership, or joint venture has been created between the parties as a result of this agreement.
+
+Third Party Services. The Workshop may involve third-party platforms or content and may be subject to their terms and conditions. The Participant agrees to review and comply with any applicable third-party terms. The Company is not liable for any faults, errors, or issues arising from third-party services, including Workshop delivery or enrolment problems. The Workshop may include third-party content or links to external websites. The Company makes no warranties regarding the quality, accuracy, or reliability of such content and is not responsible for it. The inclusion of links does not imply endorsement by the Company.
+
+Contact Information. If the Participant has any questions about these Terms, please contact the Company at: info@pymc-labs.com.
+
+The Probabilistic AI
+Consultancy
+
+Home
+About
+Blog
+
+info@pymc-labs.com
+
+Subscribe to our newsletter
+
+Stay connected with the latest developments in Probabilistic AI Statistics and AI.
+
+Subscribe
+
+You can unsubscribe at any time. For more details, review ourPrivacy Policypage.
+
+Contact
+
+© 2025 PyMC Labs. All Rights Reserved.

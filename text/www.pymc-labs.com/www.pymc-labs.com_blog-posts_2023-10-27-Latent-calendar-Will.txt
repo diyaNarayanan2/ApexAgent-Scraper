@@ -1,0 +1,121 @@
+Home
+About
+Blog
+Workshops
+Resources
+LLM Price Is Right Benchmark
+Contact us
+Table of Contents
+Introduction
+About Speaker
+Timestamps
+Important Links
+Latent Calendar: Modeling Weekly Behavior with Latent Components
+
+October 27, 2023
+
+By William Dean
+
+Introduction#
+
+In this webinar, we will explore the use of a traditional Natural Language Processing technique for modeling weekly calendar data. We will delve into how Latent Dirichlet Allocation can be applied to discretized calendar events, allowing us to tap into the model's probabilistic origins and its connection to Bayesian principles, offering a wide array of potential applications and insights.
+
+About Speaker#
+
+Will Dean is a Statistician and Data Scientist with experience in geospatial and user analytics. He is passionate about Bayesian methods and using data visualization to tell a story. He is interested in software design and how it can make data problems easier and more enjoyable to solve.
+
+LinkedIn: https://www.linkedin.com/in/williambdean/
+Timestamps#
+
+00:00 Webinar begins
+
+04:00 Presentation begins
+
+04:29 Will's background
+
+05:11 About the talk
+
+05:57 Case study dataset
+
+06:57 Data in mind
+
+07:33 Timestamps provide more info
+
+07:52 Calendar Visualization
+
+09:50 Data Generation Process (First Attempt)
+
+11:26 Data Generation Process (Second Attempt)
+
+12:32 Discrete Approximation
+
+13:19 Data Generation Process (Third Attempt)
+
+13:57 How to people get around?
+
+13:58 Data Generation Process (Fourth Attempt)
+
+17:41 Latent Dirichlet Allocation
+
+18:26 Use what is available
+
+19:51 Define "Vocab"from timestamps
+
+20:23 Aggregate to "documents"
+
+21:42 Learn from "topics"
+
+23:43 "Topic" insights
+
+24:12 Predict and Transform
+
+26:01 Low data support
+
+27:24 Prior Impact
+
+29:27 Next steps for latent-calendar project
+
+30:44 Where it fits into marketing?
+
+33:57 (Q/A) How was the project perceived by stakeholders?
+
+38:10 (Q/A) Is this being used primarily as an insight generating tool?
+
+39:48 (Q/A) Can you explain the connection to CLV modelling ...
+
+44:14 (Q/A) In general more about properties and exploiting them when modelling ...
+
+53:34 (Q/A) Whenever working with Timestamp data is it cyclical ....?
+
+55:40 Webinar ends
+
+Important Links#
+
+Latent-Calendar Docs
+
+PyMC Labs
+
+Intuitive bayes course
+
+Repository
+
+The Probabilistic AI
+Consultancy
+
+Home
+About
+Blog
+
+info@pymc-labs.com
+
+Subscribe to our newsletter
+
+Stay connected with the latest developments in Probabilistic AI Statistics and AI.
+
+Subscribe
+
+You can unsubscribe at any time. For more details, review ourPrivacy Policypage.
+
+Contact
+
+© 2025 PyMC Labs. All Rights Reserved.
