@@ -1,0 +1,26 @@
+{
+    "url": "https://en.wikipedia.org/wiki/Uncertainty_principle",
+    "total_ads_identified": 2,
+    "ad_data": [
+        {
+            "type": "Generic Ad",
+            "selector": "div.vector-typeahead-search-container",
+            "width": 500,
+            "height": 32,
+            "x": 280,
+            "y": -5743,
+            "imageSrc": null,
+            "screenshot_path": "ad_screenshots/Uncertainty_principle/ad_0_Generic_Ad_500x32.png"
+        },
+        {
+            "type": "Generic Ad",
+            "selector": "div.cdx-typeahead-search.cdx-typeahead-search--show-thumbnail.cdx-typeahead-search--auto-expand-width",
+            "width": 474,
+            "height": 32,
+            "x": 306,
+            "y": -5743,
+            "imageSrc": null,
+            "screenshot_path": "ad_screenshots/Uncertainty_principle/ad_1_Generic_Ad_474x32.png"
+        }
+    ]
+}

@@ -1,0 +1,29 @@
+{
+    "url": "https://www.ufc.com/news/live-results-official-scorecards-match-recaps-interviews-canelo-vs-crawford-las-vegas",
+    "total_ads_identified": 2,
+    "ad_data": [
+        {
+            "type": "Unknown External Ad",
+            "selector": "#google_ads_iframe_\\/5458\\/zuffa\\.ufc\\/article_0",
+            "width": 300,
+            "height": 300,
+            "x": 916,
+            "y": -4471.875,
+            "iframeSrc": null,
+            "link": "https://googleads.g.doubleclick.net/pcs/click?xai=AKAOjssGA7PbdUxr-Mqy0O0LAeMzCzLDg39An2ETSGVNf28mOXC0IqlmG-NhE-VLTfOYnTwfvcNzUKv4_ow6X9FCVBH0MFG6HtT_eybTtidubHd0QelTk-O6PJGZGXXKjsb7aEY3T9Rd-Ou_j2abFmhPkNYoREWPIRSApDCmffnribz5bDLkheOxXHEirgxr2i5325MHYSulK3H5sjJw5vkA2a66ehYSSy2BXVjLBiEwEvHyiiPyNf1-o-KRCHUN2rfp-ZnuS0rLcDphz-9b6hAVYHPNUi2bN7EFELMrg0PTpelyOu_E-4rJA412EnhQwWJDzbhqIgivlsJ7bZUOFOshP8FLgzjfDoIv4IgASwX4oHhqCuAiYUuvfYj5d_3tig&sai=AMfl-YSphxAH1Nib5uMWstdjvbClwnOUK6aWff11ZFTNneqK3NOg3ELzHXgs2wHHAhGtn0_Af-E3cCWdXt7tRVZajPbv0bLiw0ZrPlHGrUiW1ol4O9KX88ZorUXNarDqzOxnww4ZrTjkEFbenAvPZ5DCSH4ff5JoDUFjO2npQkv-ln8EbN8RIr7WJQ6TAp-z5bG_Fc4zA2elNDNNGaGZkkgFuHNuzEqg227Nb3SBpkcIlzWJtYzrels6yUVYcPWGKCwLG0bgXbAbizc-ZXm978a62ZW7KA5zR4sV&sig=Cg0ArKJSzLTrD5iqcHnf&fbs_aeid=%5Bgw_fbsaeid%5D&adurl=https://track.paritrat.agency/aeb3240d-116a-4352-a9f9-d0e5d04934c3%3Futm_campaign%3D300x300_ufc25_img",
+            "imageSrc": "https://tpc.googlesyndication.com/simgad/4545462107502864100",
+            "screenshot_path": "ad_screenshots/live-results-official-scorecards-match-recaps-interviews-canelo-vs-crawford-las-vegas/ad_0_Unknown_External_Ad_300x300.png"
+        },
+        {
+            "type": "Internal Ad",
+            "selector": "#header-wrapper",
+            "width": 1280,
+            "height": 66,
+            "x": 0,
+            "y": 0,
+            "link": "https://www.ufc.com/",
+            "imageSrc": null,
+            "screenshot_path": "ad_screenshots/live-results-official-scorecards-match-recaps-interviews-canelo-vs-crawford-las-vegas/ad_1_Internal_Ad_1280x66.png"
+        }
+    ]
+}

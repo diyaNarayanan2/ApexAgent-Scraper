@@ -1,0 +1,37 @@
+{
+    "url": "https://www.geeksforgeeks.org/html/html-boilerplate/",
+    "total_ads_identified": 3,
+    "ad_data": [
+        {
+            "type": "Internal Ad",
+            "selector": "#header-main__slider-outer-div",
+            "width": 1280,
+            "height": 43.5,
+            "x": 0,
+            "y": 0,
+            "link": "https://www.geeksforgeeks.org/html/html-tutorial/",
+            "imageSrc": null,
+            "screenshot_path": "ad_screenshots/html-boilerplate/ad_0_Internal_Ad_1280x43.png"
+        },
+        {
+            "type": "Generic Ad",
+            "selector": "#sub-header__signup-outer-div",
+            "width": 93,
+            "height": 35,
+            "x": 1187,
+            "y": 3.5,
+            "imageSrc": null,
+            "screenshot_path": "ad_screenshots/html-boilerplate/ad_1_Generic_Ad_93x35.png"
+        },
+        {
+            "type": "Generic Ad",
+            "selector": "#adsCarouselTrack",
+            "width": 900,
+            "height": 10,
+            "x": 958.78125,
+            "y": -5394.5,
+            "imageSrc": null,
+            "screenshot_path": "ad_screenshots/html-boilerplate/ad_2_Generic_Ad_900x10.png"
+        }
+    ]
+}

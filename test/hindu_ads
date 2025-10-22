@@ -1,0 +1,27 @@
+{
+    "success": true,
+    "results": [
+        [
+            "onload",
+            "onloadeddata",
+            "onloadedmetadata",
+            "onloadstart",
+            "onbeforeunload",
+            "onunload",
+            "loadScript",
+            "loadCSS",
+            "readCookie",
+            "imglazyload",
+            "lazyImageloader",
+            "setNptTechAdblockerCookie",
+            "adfiller",
+            "loadGptScript",
+            "loadPWTScript",
+            "BlockAdBlock",
+            "blockAdBlock",
+            "thgpireadCookie",
+            "showLoader",
+            "hideLoader"
+        ]
+    ]
+}
