@@ -7,34 +7,75 @@ from playwright.sync_api import sync_playwright, ElementHandle
 
 def extract_ads_with_playwright(url: str, output_file: str):
     """
-    Navigates to a URL, extracts information about ads, takes screenshots of ads,
+    Navigates to a URL, simulates scrolling to load dynamic content,
+    extracts information about ads, takes screenshots of ads,
     and saves the data to a JSON file.
     """
     
     ad_results = []
     
     # Create a directory for ad screenshots
-    screenshots_dir = Path("ad_screenshots") / Path(url).name.replace('.', '_').replace('/', '_')
+    # Use a sanitised version of the URL path for the directory name
+    sanitized_url_path = Path(url).name.replace('.', '_').replace('/', '_').replace(':', '')
+    screenshots_dir = Path("ad_screenshots") / sanitized_url_path
     screenshots_dir.mkdir(parents=True, exist_ok=True)
 
     with sync_playwright() as p:
-        browser = p.chromium.launch(headless=True) # Set headless=False to see the browser
+        # Launch browser - consider `chromium.launch(headless=False)` for debugging
+        browser = p.chromium.launch(headless=True)
         page = browser.new_page()
 
         print(f"Navigating to: {url}")
         try:
-            page.goto(url, wait_until="networkidle")
-            # Give a little extra time for very late-loading ads, adjust if needed
-            page.wait_for_timeout(60000)
+            # Navigate without waiting for networkidle, just wait for 'load' (initial HTML and resources)
+            page.goto(url, wait_until="load", timeout=60000) # Increased timeout for initial load
         except Exception as e:
             print(f"Error navigating to {url}: {e}")
             browser.close()
             return
 
-        print("Page loaded. Executing JavaScript for ad detection...")
+        print("Page loaded. Simulating scroll to load dynamic content...")
+
+        # --- Simulate Scrolling to Load All Content ---
+        scroll_height = page.evaluate("document.body.scrollHeight")
+        viewport_height = page.evaluate("window.innerHeight")
+        current_scroll_pos = 0
+        scroll_step = viewport_height * 0.8 # Scroll 80% of viewport height each step
+        
+        # Max scrolls to prevent infinite loops on extremely long or tricky pages
+        # Adjust max_scrolls if pages are very long or ads load very far down
+        max_scrolls = 10 
+        scroll_count = 0
+
+        while current_scroll_pos < scroll_height and scroll_count < max_scrolls:
+            # Scroll down
+            page.evaluate(f"window.scrollTo(0, {current_scroll_pos + scroll_step})")
+            current_scroll_pos += scroll_step
+            
+            # Wait briefly for new content to load and render
+            page.wait_for_timeout(1000) # Wait for 1 second after each scroll
+
+            # Update scroll_height in case new content has made the page longer
+            new_scroll_height = page.evaluate("document.body.scrollHeight")
+            if new_scroll_height == scroll_height:
+                # If page height hasn't changed after scrolling, might be at the end
+                if current_scroll_pos >= new_scroll_height:
+                    break
+            scroll_height = new_scroll_height
+            scroll_count += 1
+            print(f"Scrolled {scroll_count} times. Current position: {int(current_scroll_pos)} / {int(scroll_height)}")
+        
+        print("Scrolling simulation complete.")
+        # --- End Scrolling Simulation ---
+
+        # Wait a fixed, generous time for all ads/scripts to execute after scrolling
+        # This is crucial for ads that load after all visual content is in place.
+        print("Waiting for final script execution and ad rendering (5 seconds)...")
+        page.wait_for_timeout(5000) # Wait 5 seconds after scrolling, regardless of network status
+
+        print("Executing JavaScript for ad detection...")
 
         # JavaScript code to run in the browser context
-        # This function identifies potential ads and collects their basic data
         js_ad_detection_script = """
         (function() {
             const adData = [];
@@ -43,7 +84,7 @@ def extract_ads_with_playwright(url: str, output_file: str):
                 if (!el || typeof el.tagName === 'undefined') {
                     return null;
                 }
-                if (el.id) return '#' + CSS.escape(el.id); // Use CSS.escape for robustness
+                if (el.id) return '#' + CSS.escape(el.id);
                 let selector = el.tagName.toLowerCase();
                 if (el.className) {
                     selector += '.' + Array.from(el.classList).map(cls => CSS.escape(cls)).join('.');
@@ -85,8 +126,6 @@ def extract_ads_with_playwright(url: str, output_file: str):
                         adType = 'Internal Ad (iframe)'; 
                     }
 
-                    // For cross-origin iframes, contentDocument is not accessible due to Same-Origin Policy
-                    // So link and imageSrc will likely be null for most ad iframes
                     let link = null;
                     let imageSrc = null;
                     try {
@@ -121,8 +160,6 @@ def extract_ads_with_playwright(url: str, output_file: str):
             genericAdSelectors.forEach(selector => {
                 document.querySelectorAll(selector).forEach(el => {
                     const rect = el.getBoundingClientRect();
-                    // Avoid duplicates and only consider visible elements
-                    // Check if an ad with the same selector or very similar dimensions/position is already found
                     const currentSelector = getElementSelector(el);
                     if (rect.width > 0 && rect.height > 0 && 
                         !adData.some(item => item.selector === currentSelector || 
@@ -154,7 +191,6 @@ def extract_ads_with_playwright(url: str, output_file: str):
         })();
         """
 
-        # Execute the JavaScript and get the results
         js_raw_results = page.evaluate(js_ad_detection_script)
         
         try:
@@ -169,17 +205,20 @@ def extract_ads_with_playwright(url: str, output_file: str):
         # --- Iterate through identified ads and take screenshots ---
         for i, ad_info in enumerate(identified_ads):
             selector = ad_info.get("selector")
-            if not selector:
-                print(f"Warning: Ad {i} has no selector. Skipping screenshot.")
-                continue
+            # Only try to screenshot if the element has valid dimensions for a visible ad
+            if not selector or ad_info.get('width', 0) <= 5 or ad_info.get('height', 0) <= 5: # Minimal size for an ad
+                print(f"Warning: Ad {i} ('{ad_info.get('type', 'Unknown')}') has invalid dimensions or no selector. Skipping screenshot.")
+                ad_info['screenshot_path'] = "N/A (invalid dimensions or no selector)"
+                ad_results.append(ad_info)
+                continue # Skip to next ad
 
             try:
-                # Playwright's locator to find the element
                 ad_element = page.locator(selector).first
 
-                # Check if the element exists and is visible
                 if ad_element and ad_element.is_visible():
-                    screenshot_name = f"ad_{i}_{ad_info['type'].replace(' ', '_').replace('(', '').replace(')', '')}_{ad_info['width']}x{ad_info['height']}.png"
+                    # Sanitize ad type for filename
+                    clean_ad_type = ad_info['type'].replace(' ', '_').replace('(', '').replace(')', '').replace('/', '_')
+                    screenshot_name = f"ad_{i}_{clean_ad_type}_{int(ad_info['width'])}x{int(ad_info['height'])}.png"
                     screenshot_path = screenshots_dir / screenshot_name
                     
                     print(f"Attempting screenshot for ad {i} ({ad_info['type']}) at {screenshot_path}")
